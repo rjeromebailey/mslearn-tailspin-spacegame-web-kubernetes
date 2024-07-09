@@ -1,9 +1,12 @@
-trigger: none
+trigger:
+- 'main'
 
 variables:
   buildConfiguration: 'Release'
+  leaderboardRepository: 'leaderboard'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
+  imagePullSecret: 'secret'
 
 stages:
 - stage: 'Build'
@@ -41,3 +44,4 @@ stages:
        appName: $(WebAppName)
        azureSubscription: 'Resource Manager - Tailspin - Space Game'
        imageName: $(RegistryName)/$(webRepository):$(build.buildId)
+       
