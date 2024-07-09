@@ -66,5 +66,5 @@ stages:
               dockerRegistryEndpoint: 'Container Registry Connection'
               azureSubscriptionConnection: 'Kubernetes Cluster Connection'
               azureResourceGroup: 'tailspin-space-game-rg'
-              kubernetesCluster: 'tailspinspacegame24141'
+              kubernetesCluster: 'tailspinspacegame-24141'
               namespace: 'default'
